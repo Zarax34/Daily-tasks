@@ -1,0 +1,44 @@
+{
+  "rules": {
+    "users": {
+      "$userId": {
+        ".read": "$userId === auth.uid",
+        ".write": "$userId === auth.uid",
+        "tasks": {
+          ".read": "$userId === auth.uid",
+          ".write": "$userId === auth.uid",
+          "$taskId": {
+            ".validate": "newData.hasChildren(['title', 'time', 'status'])"
+          }
+        },
+        "notesBoard": {
+          ".read": "$userId === auth.uid",
+          ".write": "$userId === auth.uid",
+          "notes": {
+            "$noteId": {
+              ".validate": "newData.hasChildren(['content', 'color', 'position', 'size'])"
+            }
+          }
+        },
+        "supervisor": {
+          ".read": "$userId === auth.uid",
+          ".write": false
+        }
+      }
+    },
+    "supervisors": {
+      "$supervisorId": {
+        ".read": "$supervisorId === auth.uid",
+        ".write": "$supervisorId === auth.uid",
+        "linkedUsers": {
+          ".read": "$supervisorId === auth.uid",
+          ".write": "$supervisorId === auth.uid"
+        }
+      }
+    },
+    "notifications": {
+      ".read": false,
+      ".write": false
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "react-native": {
+    "android_task_monitor": {
+      "api_key": "YOUR_API_KEY_HERE",
+      "auth_domain": "YOUR_PROJECT_ID.firebaseapp.com",
+      "database_url": "https://YOUR_PROJECT_ID-default-rtdb.firebaseio.com",
+      "project_id": "YOUR_PROJECT_ID",
+      "storage_bucket": "YOUR_PROJECT_ID.appspot.com",
+      "messaging_sender_id": "YOUR_SENDER_ID",
+      "app_id": "YOUR_APP_ID",
+      "measurement_id": "YOUR_MEASUREMENT_ID"
+    }
+  }
+}
