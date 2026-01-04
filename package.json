@@ -28,7 +28,6 @@
     "expo-firebase-recaptcha": "~2.3.1",
     "expo-notifications": "~0.20.1",
     "expo-permissions": "~14.2.1",
-    "expo-alarms": "~0.3.0",
     "react-native-qrcode-svg": "^6.2.0",
     "react-native-svg": "13.9.0",
     "react-native-view-shot": "3.7.0",
