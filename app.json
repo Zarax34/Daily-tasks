@@ -40,8 +40,7 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-notifications",
-      "expo-alarms",
+      "expo-notifications", 
       "expo-barcode-scanner"
     ]
   }
