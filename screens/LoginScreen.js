@@ -74,11 +74,11 @@ const LoginScreen = ({ navigation }) => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.header}>
-        <Image
+        {/* <Image
           source={require('../assets/icon.png')}
           style={styles.logo}
           resizeMode="contain"
-        />
+        /> */}
         <Title style={styles.title}>DailyTask Monitor</Title>
         <Paragraph style={styles.subtitle}>إدارة مهام يومية مع نظام مراقب</Paragraph>
       </View>

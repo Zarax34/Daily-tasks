@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { Provider as PaperProvider } from 'react-native-paper';
 import { initializeApp } from 'firebase/app';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
-import { getDatabase } from 'firebase/database';
+import { getDatabase, ref, update } from 'firebase/database';
 import { Platform } from 'react-native';
 import * as Notifications from 'expo-notifications';
 import * as TaskManager from 'expo-task-manager';
@@ -92,8 +92,8 @@ const App = () => {
 
     // Save token to database
     if (user) {
-      const userRef = database.ref(`users/${user.uid}`);
-      await userRef.update({
+      const userRef = ref(database, `users/${user.uid}`);
+      await update(userRef, {
         pushToken: token,
       });
     }

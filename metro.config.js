@@ -24,20 +24,7 @@ module.exports = (async () => {
     },
   };
 
-  // Enable caching
-  config.cacheStores = [
-    {
-      get: (key) => {
-        // Implement cache retrieval
-      },
-      set: (key, value) => {
-        // Implement cache storage
-      },
-      clear: () => {
-        // Implement cache clearing
-      },
-    },
-  ];
+  // Caching is handled by default by Metro
 
   return config;
 })();

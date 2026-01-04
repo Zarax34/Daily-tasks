@@ -27,7 +27,7 @@
     "expo-firebase-core": "~6.0.0",
     "expo-firebase-recaptcha": "~2.3.1",
     "expo-notifications": "~0.20.1",
-    "expo-permissions": "~14.2.1",
+
     "react-native-qrcode-svg": "^6.2.0",
     "react-native-svg": "13.9.0",
     "react-native-view-shot": "3.7.0",
@@ -36,9 +36,7 @@
     "react-native-color-picker": "^0.6.0",
     "expo-device": "~5.4.0",
     "expo-battery": "~7.3.0",
-    "react-native-background-timer": "^2.4.1",
-    "react-native-push-notification": "^8.1.1",
-    "react-native-fs": "^2.20.0"
+
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
